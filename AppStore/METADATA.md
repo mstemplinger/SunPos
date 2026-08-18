@@ -13,7 +13,7 @@ in `SunPos/Views/LegalView.swift` (in der App) und in `docs/` (als Webseiten).
 | Team | NY363CML59 (Tobias Aufschläger) |
 | Version | 1.0 (Build 1) |
 | Mindestsystem | iOS 17.0 |
-| Geräte | iPhone, iPad (nur Hochformat) |
+| Geräte | iPhone (nur Hochformat) |
 | Primäre Kategorie | Wetter |
 | Sekundäre Kategorie | Bildung |
 | Preis | Kostenlos |
@@ -138,13 +138,13 @@ ITSAppUsesNonExemptEncryption = NO
 
 ## Screenshots
 
-Pflicht ist mindestens ein Satz für iPhone 6.9" und, weil die App iPad unterstützt,
-ein Satz für iPad 13". Alle im Hochformat.
+Pflicht ist mindestens ein Satz für iPhone. Alle im Hochformat.
+Die App ist iPhone-only (`TARGETED_DEVICE_FAMILY = "1"`) – deshalb verlangt Apple
+keinen iPad-Satz.
 
 | Gerät | Auflösung (Hochformat) |
 | --- | --- |
-| iPhone 6.9" | 1290 × 2796 |
-| iPad 13" | 2048 × 2732 |
+| iPhone 6.7" | 1290 × 2796 |
 
 Die Diagrammansicht, die Zeitleiste, die Sonnenzeiten und der Ortsdialog lassen sich im
 Simulator aufnehmen (`AppStore/screenshots/`). **Die AR-Ansicht nicht** – ARKit läuft nur

@@ -4,7 +4,7 @@ Native iOS-App, die den Sonnenverlauf per **ARKit** direkt ins Kamerabild zeichn
 Sonne jetzt steht, wo sie zu jedem Zeitpunkt des Tages stehen wird, und wie die Bahn am
 längsten und kürzesten Tag des Jahres verläuft.
 
-Swift 5 · SwiftUI · ARKit + SceneKit · iOS 17+ · iPhone und iPad
+Swift 5 · SwiftUI · ARKit + SceneKit · iOS 17+ · iPhone
 
 ---
 
