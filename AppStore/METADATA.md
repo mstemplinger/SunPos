@@ -35,7 +35,7 @@ Apple prüft die Datenschutz-URL bei der Einreichung, sie muss erreichbar bleibe
 
 ## Werbetext (max. 170 Zeichen)
 
-> Halte das iPhone hoch und sieh, wo die Sonne heute noch entlangzieht – wo sie untergeht,
+> Halte das iPhone hoch und sieh, wo die Sonne heute entlangzieht – wo sie untergeht,
 > wann die goldene Stunde beginnt, und ob sie im Dezember über das Nachbarhaus reicht.
 
 ## Beschreibung
