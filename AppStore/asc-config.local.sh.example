@@ -1,0 +1,5 @@
+# Vorlage: nach asc-config.local.sh kopieren und eigene Werte eintragen.
+# Beide Werte stehen in App Store Connect unter
+# Benutzer und Zugriff → Integrationen → App Store Connect API.
+export ASC_KEY_ID="XXXXXXXXXX"
+export ASC_ISSUER_ID="00000000-0000-0000-0000-000000000000"

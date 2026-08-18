@@ -5,24 +5,30 @@
 # Voraussetzungen, die nur über App Store Connect zu erledigen sind:
 #   1. Bundle-ID im Developer-Portal registriert (Certificates, Identifiers & Profiles)
 #   2. App-Datensatz in App Store Connect angelegt (gleiche Bundle-ID)
-#   3. Issuer-ID des API-Schlüssels: App Store Connect → Benutzer und Zugriff →
-#      Integrationen → App Store Connect API. Der Schlüssel selbst liegt schon unter
-#      ~/.appstoreconnect/private_keys/AuthKey_9CR8JBB4GT.p8
+# Schlüssel-ID und Issuer-ID stehen in AppStore/asc-config.local.sh – die Datei ist
+# absichtlich nicht eingecheckt, weil dieses Repository öffentlich ist. Vorlage:
+# asc-config.local.sh.example. Der Schlüssel selbst liegt unter
+# ~/.appstoreconnect/private_keys/AuthKey_<KEY_ID>.p8 und gehört nirgends ins Repo.
 #
-# Aufruf:  ASC_ISSUER_ID=<uuid> ./AppStore/submit.sh
+# Aufruf:  ./AppStore/submit.sh
 #
 set -euo pipefail
 
-KEY_ID="9CR8JBB4GT"
-TEAM_ID="NY363CML59"
-ARCHIVE="build/SunPos.xcarchive"
-EXPORT_DIR="build/export"
+CONFIG="$(dirname "$0")/asc-config.local.sh"
+[[ -f "$CONFIG" ]] && source "$CONFIG"
 
-if [[ -z "${ASC_ISSUER_ID:-}" ]]; then
-  echo "ASC_ISSUER_ID ist nicht gesetzt – ohne Issuer-ID kann weder ein" >&2
-  echo "Distributionsprofil geholt noch hochgeladen werden." >&2
+KEY_ID="${ASC_KEY_ID:-}"
+ASC_ISSUER_ID="${ASC_ISSUER_ID:-}"
+TEAM_ID="NY363CML59"
+
+if [[ -z "$KEY_ID" || -z "$ASC_ISSUER_ID" ]]; then
+  echo "ASC_KEY_ID und ASC_ISSUER_ID fehlen." >&2
+  echo "Lege AppStore/asc-config.local.sh nach dem Muster von" >&2
+  echo "asc-config.local.sh.example an oder setze beide als Umgebungsvariablen." >&2
   exit 1
 fi
+ARCHIVE="build/SunPos.xcarchive"
+EXPORT_DIR="build/export"
 
 cd "$(dirname "$0")/.."
 rm -rf "$ARCHIVE" "$EXPORT_DIR"

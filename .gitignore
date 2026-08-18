@@ -18,3 +18,6 @@ xcuserdata/
 
 # Archiv- und Exportausgaben von AppStore/submit.sh
 build/
+
+# Lokale App-Store-Connect-Kennungen
+AppStore/asc-config.local.sh

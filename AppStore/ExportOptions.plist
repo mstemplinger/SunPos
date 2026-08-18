@@ -6,12 +6,22 @@
 	<string>app-store-connect</string>
 	<key>teamID</key>
 	<string>NY363CML59</string>
+	<!-- Manuell, weil der API-Schlüssel keine Cloud-Signierung darf
+	     („Cloud signing permission error“). Das Profil „SunPos App Store“
+	     wurde stattdessen direkt über die API angelegt. -->
 	<key>signingStyle</key>
-	<string>automatic</string>
+	<string>manual</string>
+	<key>signingCertificate</key>
+	<string>Apple Distribution</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.TobiasAufschlaeger.SunPos</key>
+		<string>SunPos App Store</string>
+	</dict>
 	<key>uploadSymbols</key>
 	<true/>
-	<!-- Der Upload wird bewusst nicht hier ausgelöst, sondern als eigener Schritt
-	     in submit.sh – so lässt sich das Archiv vorher prüfen. -->
+	<!-- Der Upload läuft als eigener Schritt in submit.sh, damit das Archiv
+	     vorher prüfbar bleibt. -->
 	<key>destination</key>
 	<string>export</string>
 </dict>
