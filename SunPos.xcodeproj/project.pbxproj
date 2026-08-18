@@ -257,6 +257,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SunPos;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Die Kamera wird benötigt, um die Sonnenbahn als AR-Überlagerung in das Livebild deiner Umgebung einzuzeichnen.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dein Standort wird benötigt, um den Sonnenstand für deine Position exakt zu berechnen und die Bahn richtig auszurichten.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -291,6 +292,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SunPos;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Die Kamera wird benötigt, um die Sonnenbahn als AR-Überlagerung in das Livebild deiner Umgebung einzuzeichnen.";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Dein Standort wird benötigt, um den Sonnenstand für deine Position exakt zu berechnen und die Bahn richtig auszurichten.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
