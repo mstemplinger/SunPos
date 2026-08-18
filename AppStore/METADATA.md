@@ -9,7 +9,7 @@ in `SunPos/Views/LegalView.swift` (in der App) und in `docs/` (als Webseiten).
 | --- | --- |
 | Name | SunPos |
 | Untertitel (max. 30) | Sonnenverlauf in AR sehen |
-| Bundle-ID | `com.ondeso.SunPos` |
+| Bundle-ID | `com.TobiasAufschlaeger.SunPos` |
 | Team | NY363CML59 (Tobias Aufschläger) |
 | Version | 1.0 (Build 1) |
 | Mindestsystem | iOS 17.0 |

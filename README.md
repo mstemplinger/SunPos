@@ -64,7 +64,7 @@ xcrun simctl location booted set 49.0134,12.1016
 ### Auf einem echten iPhone (für die AR-Ansicht nötig)
 
 1. Projekt in Xcode öffnen, Target `SunPos` → *Signing & Capabilities*
-2. Eigenes *Team* auswählen; die Bundle-ID `com.ondeso.SunPos` bei Bedarf auf eine eigene ändern
+2. Eigenes *Team* auswählen; die Bundle-ID `com.TobiasAufschlaeger.SunPos` bei Bedarf auf eine eigene ändern
 3. iPhone per Kabel verbinden, als Ziel wählen, ⌘R
 4. Beim ersten Start Standort- und Kamerazugriff erlauben
 
