@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- SunPos verfolgt niemanden: keine Analyse, keine Werbung, keine Kennungen. -->
+	<key>NSPrivacyTrackingEnabled</key>
+	<false/>
+	<key>NSPrivacyTrackingDomains</key>
+	<array/>
+	<!-- Es werden keine Daten an uns übertragen. Standort und Kamerabild bleiben
+	     auf dem Gerät; die Reverse-Geokodierung des Ortsnamens läuft über Apples
+	     eigenen Dienst und ist keine Erhebung durch den Entwickler. -->
+	<key>NSPrivacyCollectedDataTypes</key>
+	<array/>
+	<key>NSPrivacyAccessedAPITypes</key>
+	<array>
+		<dict>
+			<!-- UserDefaults: speichert allein den manuell eingegebenen Ort
+			     (AppState.manualKey) für den nächsten Start dieser App. -->
+			<key>NSPrivacyAccessedAPIType</key>
+			<string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+			<key>NSPrivacyAccessedAPITypeReasons</key>
+			<array>
+				<string>CA92.1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
