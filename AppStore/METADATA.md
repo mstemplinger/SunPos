@@ -22,16 +22,16 @@ in `SunPos/Views/LegalView.swift` (in der App) und in `docs/` (als Webseiten).
 
 ## Support- und Rechts-URLs
 
-Nach Aktivierung von GitHub Pages (`Settings → Pages → Branch main, Ordner /docs`):
+GitHub Pages ist aktiv (Repository `mstemplinger/SunPos`, Branch `main`, Ordner `/docs`):
 
 | Feld in App Store Connect | URL |
 | --- | --- |
-| Datenschutzrichtlinien-URL (**Pflicht**) | `https://<konto>.github.io/SunPos/datenschutz.html` |
-| Support-URL (**Pflicht**) | `https://<konto>.github.io/SunPos/` |
-| Marketing-URL (optional) | `https://<konto>.github.io/SunPos/` |
+| Datenschutzrichtlinien-URL (**Pflicht**) | `https://mstemplinger.github.io/SunPos/datenschutz.html` |
+| Support-URL (**Pflicht**) | `https://mstemplinger.github.io/SunPos/` |
+| Marketing-URL (optional) | `https://mstemplinger.github.io/SunPos/` |
 
-`<konto>` ist der GitHub-Benutzername. Beide Seiten müssen erreichbar sein, bevor
-eingereicht wird – Apple prüft die Datenschutz-URL.
+Das Impressum liegt unter `https://mstemplinger.github.io/SunPos/impressum.html`.
+Apple prüft die Datenschutz-URL bei der Einreichung, sie muss erreichbar bleiben.
 
 ## Werbetext (max. 170 Zeichen)
 
